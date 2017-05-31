@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Triva Game</title>
+		<!-- CSS Files -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+		<div id="main-container" class="container">
+		<section class="main-section">
+			<h1 class="rules">The Rules</h1>
+			<p class="rules">There are 4 questions, you have one minute to answer all of the questions.</p>
+			<h2>
+				<button type="button" id="start-button">Start</button>
+			</h2>
+			<!-- timer will be displayed in div#show-number-->
+			<div id="show-number"></div>
+		
+		<table style="width:583px">
+			<tr>
+				<td>
+					<div>
+						<p class="question">1. Quarterback Matt Ryan plays for which of the following teams?</p>
+						<ul>
+							<input class="answer" type="radio" name="q1" value="1">
+							<label id="correctString1">Atlanta Falcons</label>
+							<br>
+							<input class="answer" type="radio" name="q1" value="0">
+							<label>New England Patriots</label>
+							<br>
+							<input class="answer" type="radio" name="q1" value="0">
+							<label>Arizona Cardinals</label>
+							<br>
+							<input class="answer" type="radio" name="q1" value="0">
+							<label>Carolina Panthers</label>
+						</ul>
+					</div>
+				</td>
+				<td>
+					<div>
+						<p class="question">2. Which of the following people have NOT been a US president?</p>
+						<ul>
+							<input class="answer" type="radio" name="q2" value="0">
+							<label>Barack Obama</label>
+							<br>
+							<input class="answer" type="radio" name="q2" value="1">
+							<label id="correctString2">Kanye West</label>
+							<br>
+							<input class="answer" type="radio" name="q2" value="0">
+							<label>Bill Clinton</label>
+							<br>
+							<input class="answer" type="radio" name="q2" value="0">
+							<label>Ronald Reagan</label>
+						</ul>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<p class="question">4. If you divide 45 by 3, what do you get?</p>
+						<ul>
+							<input class="answer" type="radio" name="q3" value="0">
+							<label>7</label>
+							<br>
+							<input class="answer" type="radio" name="q3" value="1">
+							<label id="correctString3">15</label>
+							<br>
+							<input class="answer" type="radio" name="q3" value="0">
+							<label>28</label>
+							<br>
+							<input class="answer" type="radio" name="q3" value="0">
+							<label>5</label>
+						</ul>
+					</div>
+				</td>
+				<td>
+					<div>
+						<p class="question">4. which car band has been discontinued this year?</p>
+						<ul>
+							<input class="answer" type="radio" name="q4" value="0">
+							<label>Fiat</label>
+							<br>
+							<input class="answer" type="radio" name="q4" value="1">
+							<label id="correctString4">Scion</label>
+							<br>
+							<input class="answer" type="radio" name="q4" value="0">
+							<label>Dodge</label>
+							<br>
+							<input class="answer" type="radio" name="q4" value="0">
+							<label>Nissan</label>
+						</ul>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<br/>
+		<div class="submitter">
+			<input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+			type="submit" value="Submit" />
+		</div>
+		
+		<!--show only wrong answers on submit-->
+		<div class="quizAnswers" id="correctAnswer1"></div>
+		<div class="quizAnswers" id="correctAnswer2"></div>
+		<div class="quizAnswers" id="correctAnswer3"></div>
+		<div class="quizAnswers" id="correctAnswer4"></div>
+		<!--show score upon submit-->
+		<div>
+			<h2 class="quizScore" id="userScore"></h2>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
